@@ -1,0 +1,174 @@
+body{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+header{
+    background-color: #033959;
+    padding: 1em 0;
+}
+
+nav{
+    background-color: #185173 ;
+    margin-bottom: 2em;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-flex;
+    justify-content: space-around;
+    width: 15%;
+}
+nav ul li a{
+    color: white;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: rgb(0,0,0,0.3);
+}
+nav ul li a.activo{
+    background-color: rgb(0,0,0,0.3);
+}
+
+.holder{
+    display: flex;
+    justify-content: center;
+}
+
+.holder1{
+    margin: auto;
+    width: 960px;
+}
+
+
+footer{
+    background-color: #ccc;
+    clear: both;
+    color: #333 ;
+    padding: 0.5em 0;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+
+.columnas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.columnas > div{
+    width: 50%;
+}
+
+h2{
+    text-align: center;
+    font-weight: 700;
+}
+
+.bienvenidos, .testimonios{ 
+    padding: 1em;    
+    text-align: justify;
+}
+
+.testimonios{
+    background-color: #ccc;
+    margin: 1em 5em 5em 5em;
+    border-radius:20px;
+    border-style:double;  
+}
+
+.autor, .cita{
+    text-align: center;
+    display: block; 
+}
+.autor{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card img{
+    border-radius: 50%;
+    width: 140px;
+    margin: 1em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #185173;
+}
+
+.card-title{
+    color: #185173;
+    text-align: center ;
+}
+.card-text{
+    text-align: center;
+    overflow:hidden;
+}
+
+.card{
+    border-style:solid;
+    border-color: #185173;
+}
+
+.accordion-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.imgs{
+    width: 30%;
+    padding-left: 2em;
+}
+.texto{
+    width: 70%;
+}
+
+.columna{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.6em;
+}
+.columna > p{
+    text-align: center;
+}
+.columna.left{
+    border-right: 1px solid gray;
+}
+.columna.right p{
+    font-size: 0.9em;
+}
+
+.formulario input, .formulario textarea{
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    width: 90%;
+    resize: none;
+}
+.formulario input[type="submit"]{
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: white;
+    font-size: 1em;
+    width: auto;
+    cursor: pointer;
+}
+.formulario .acciones{
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+footer{
+  background-color: #ccc;
+  clear: both;
+  color: #333 ;
+  padding: 0.5em 0;
+  text-align: center;
+  margin-top: 2em;
+}
+
+header{
+  background-color: #033959;
+  padding: 1em 0;
+  justify-content: center;
+  
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+
+.holder{
+  display: flex;
+  justify-content: center;
+}
+
+.holder1{
+  margin: auto;
+  width: 960px;
+}

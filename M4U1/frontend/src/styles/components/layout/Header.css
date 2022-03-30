@@ -1,0 +1,11 @@
+header{
+    background-color: #033959;
+    padding: 1em 0;
+    justify-content: center;
+    
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}

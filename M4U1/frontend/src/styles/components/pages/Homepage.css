@@ -1,0 +1,55 @@
+.bienvenidos, .testimonios{ 
+    padding: 1em;    
+    text-align: justify;
+}
+
+.testimonios{
+    background-color: #ccc;
+    margin: 1em 5em 5em 5em;
+    border-radius:20px;
+    border-style:double;  
+}
+
+.autor, .cita{
+    text-align: center;
+    display: block; 
+}
+.autor{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.imgs{
+    width: 30%;
+    padding-left: 2em;
+}
+.texto{
+    width: 70%;
+}
+
+.holder1{
+    margin: auto;
+    width: 960px;
+  }
+  
+  .right{
+    float: right;
+  }
+  .left{
+    float: left;
+  }
+  
+  .columnas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .columnas > div{
+    width: 50%;
+  }
+  
+  h2{
+    text-align: center;
+    font-weight: 700;
+  }

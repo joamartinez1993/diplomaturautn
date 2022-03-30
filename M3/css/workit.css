@@ -163,7 +163,7 @@ h2{
 }
 .formulario input[type="submit"]{
     background-color: #6da9ed;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px rgba(71, 55, 55, 0.4);
     color: white;
     font-size: 1em;
     width: auto;

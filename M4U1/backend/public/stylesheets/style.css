@@ -29,3 +29,26 @@ header{
   margin: auto;
   width: 960px;
 }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10%;
+}
+
+.input{
+  margin: 10px;
+}
+
+.userError{
+  display: flex;
+  color: red;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.text-end{
+ margin: 20px;
+}

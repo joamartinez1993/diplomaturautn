@@ -1,1 +1,22 @@
-<h2 class="holder">PROXIMAMENTE LOGIN</h2>
+
+<div class="holder">
+<form action="/admin/login" method="post">
+   <div class="container"> 
+   <div class="input">
+        <input type="text" class="form-control" placeholder="Usuario" name="usuario">
+    </div>
+    <div class="input">
+    <input type="password" class="form-control" placeholder="Password" name="password">
+    </div>
+    <div class="input">
+    <button type="submit" class="btn btn-primary">Entrar</button>
+    </div>
+    </div>
+</form>
+
+</div>
+<div class="userError">
+    {{#if error}}
+    <p>Usuario o contraseña incorrrectos</p>
+    {{/if}}
+</div>

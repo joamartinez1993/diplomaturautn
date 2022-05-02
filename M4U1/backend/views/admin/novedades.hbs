@@ -1,7 +1,50 @@
-<p class="text-end">Hola {{usuario}}! <a class="btn btn-danger" href="/admin/login/logout"> Cerrar sesion  <i class="fa-solid fa-person-walking-arrow-right"></i> </a></p>
-
-<div class="holder">
-<h2 style="padding: 30px;">Bienvenido a Novedades</h2>
+<div class="user-logout">
+<p class="text-end">Hola {{usuario}}!<a class="btn btn-danger" href="/admin/login/logout"> Cerrar sesion  <i class="fa-solid fa-person-walking-arrow-right"></i> </a></p>
 </div>
+
+<div class="row holder" style="padding-top: 30px;">
+    <div class="col-7">
+        <h3>Listado de Novedades</h3>
+    </div>
+    <div class="col-2 text-right">
+        <a href="/admin/novedades/agregar" class="btn btn-outline-success ">
+            <i class="fa-solid fa-circle-plus"></i> Nuevo
+        </a>
+    </div>
+</div>
+
+<div class="holder1">
+<div class="row">
+    <div class="col">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col" class="text-center">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each novedades}}
+                <tr>
+                    <th scope="row">{{id}}</th>
+                    <td>{{titulo}}</td>
+                    <td>{{{imagen}}}</td>
+                    <td class="text-center">
+                        <a href="/admin/novedades/modificar/{{id}}" title="Editar" class="btn btn-sm btn-outline-secondary"> <i class="fa fa-pencil"></i></a>
+                        <a href="/admin/novedades/eliminar/{{id}}" title="Eliminar" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-trash-can"></i></a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+
+
+
+
 
 

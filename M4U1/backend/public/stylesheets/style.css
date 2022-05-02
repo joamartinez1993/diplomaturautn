@@ -8,6 +8,8 @@ footer{
 }
 
 header{
+  display: flex;
+  flex-direction: column;
   background-color: #033959;
   padding: 1em 0;
   justify-content: center;
@@ -51,4 +53,19 @@ header{
 
 .text-end{
  margin: 20px;
+}
+
+.user-logout{
+  color: white;
+  position:relative;
+  margin-top: -80px;
+}
+
+.right{
+  float: right;
+  margin: 10px;
+}
+
+.btn{
+  margin-left: 10px ;
 }

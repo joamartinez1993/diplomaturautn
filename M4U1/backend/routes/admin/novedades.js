@@ -18,7 +18,7 @@ router.get('/', async function(req, res, next) {
       const imagen = cloudinary.image(novedad.img_id, {
         width: 100,
         height: 100,
-        crop: fill
+        crop: 'fill'
       });
       return {
         ...novedad,

@@ -1,5 +1,4 @@
 var express = require('express');
-const async = require('hbs/lib/async');
 var router = express.Router();
 var novedadesModel = require ('./../../models/novedadesModel');
 var util = require ('util');
@@ -80,10 +79,6 @@ router.post ('/modificar', async (req, res, next) =>{
     } if (borrar_img_vieja && req.body.img_original) {
       await (destroy(req.body.img_original));
     }
-  } catch (error){
-
-  }
-  try {
     let obj ={
       titulo: req.body.titulo,
       subtitulo: req.body.subtitulo,
@@ -92,6 +87,7 @@ router.post ('/modificar', async (req, res, next) =>{
     }
     await novedadesModel.modificarNovedadById(obj, req.body.id);
     res.redirect('/admin/novedades');
+    console.log();
   } catch (error){
     console.log(error)
     res.render ('admin/modificar',{

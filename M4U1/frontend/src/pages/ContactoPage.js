@@ -40,7 +40,7 @@ const ContactoPage = (props) => {
         <main class="holder1">
         <div class="columna left">
           <h2>Contacto Rapido</h2>
-          <form action="" method="" onSubmit={handleSubmit} class="formulario">
+          <form action='/contacto' method='post' onSubmit={handleSubmit} class="formulario">
             <p>
               <label for=""></label>
               <input type="text" name='nombre' value={formData.nombre} onChange={handleChange} placeholder="Nombre" />
@@ -66,9 +66,11 @@ const ContactoPage = (props) => {
               ></textarea>
             </p>
             {sending ? <p>Enviando...</p>: null}
-            {msg ? <p>{msg}</p> : null}
+          {msg ? <p>{msg}</p> : null}
+
             <p class="acciones"><input type="submit" value="Enviar" /></p>
           </form>
+          
         </div>
         <div class="columna right">
           <h2>Otras vias de contacto</h2>

@@ -2,6 +2,7 @@ var express = require ('express');
 var router = express.Router();
 var novedadesModel = require ('./../models/novedadesModel');
 var cloudinary = require ('cloudinary').v2;
+var nodemailer = require ('nodemailer');
 
 router.get ('/novedades', async function (req, res, next) {
     let novedades = await novedadesModel.getNovedades();
@@ -43,7 +44,7 @@ router.post ('/contacto', async (req,res) =>{
             pass: process.env.SMTP_PASS
         }
     });
-    
+
     await transport.sendMail(mail)
     res.status(201).json({
         error: false,

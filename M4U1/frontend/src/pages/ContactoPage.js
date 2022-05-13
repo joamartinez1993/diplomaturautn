@@ -44,20 +44,20 @@ const ContactoPage = (props) => {
           <form action="" method="" onSubmit={handleSubmit} class="formulario">
             <p>
               <label for=""></label>
-              <input type="text" value={formData.nombre} onChange={handleChange} placeholder="Nombre" />
+              <input type="text" name='nombre' value={formData.nombre} onChange={handleChange} placeholder="Nombre" />
             </p>
             <p>
               <label for=""></label>
-              <input type="text" value={formData.email} onChange={handleChange} placeholder="Email" />
+              <input type="text" name='email' value={formData.email} onChange={handleChange} placeholder="Email" />
             </p>
             <p>
               <label for=""></label>
-              <input type="text" value={formData.telefono} onChange={handleChange} placeholder="Telefono" />
+              <input type="text" name='telefono' value={formData.telefono} onChange={handleChange} placeholder="Telefono" />
             </p>
             <p>
               <label for="comentario"></label>
               <textarea
-                name=""
+                name="mensaje"
                 id="comentario"
                 cols="30"
                 rows="10"

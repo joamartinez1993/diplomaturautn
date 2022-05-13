@@ -34,7 +34,7 @@ router.post ('/contacto', async (req,res) =>{
         subject: 'Contacto Web',
         html: `${req.body.nombre} se contacto a traves de la web y queire mas informacion a este correo: ${req.body.email} <br> Ademas, hizo el siguiente comentario: ${req.body.mensaje} <br> Su tel es: ${req.body.telefono}`
     }
-    const transport = nodemailes.createTransport({
+    const transport = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
         port: process.env.SMTP_PORT,
         auth: {
@@ -42,7 +42,7 @@ router.post ('/contacto', async (req,res) =>{
             pass: process.env.SMTP_PASS
         }
     });
-    await transport.sendmMail(mail)
+    await transport.sendMail(mail)
     res.status(201).json({
         error: false,
         message: 'Mensaje Enviado'

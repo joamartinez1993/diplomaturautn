@@ -25,7 +25,7 @@ const ContactoPage = (props) => {
   }
 
   const handleSubmit = async e => {
-    e.preventDefault ();
+    e.preventDefault();
     setMsg('');
     setSending(true)
     const response =  await

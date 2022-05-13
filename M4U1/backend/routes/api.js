@@ -28,4 +28,25 @@ router.get ('/novedades', async function (req, res, next) {
     res.json (novedades);
 });
 
+router.post ('/contacto', async (req,res) =>{
+    const mail= {
+        to: 'joaquin.martinez1993@gmail.com',
+        subject: 'Contacto Web',
+        html: `${req.body.nombre} se contacto a traves de la web y queire mas informacion a este correo: ${req.body.email} <br> Ademas, hizo el siguiente comentario: ${req.body.mensaje} <br> Su tel es: ${req.body.telefono}`
+    }
+    const transport = nodemailes.createTransport({
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
+        auth: {
+            user: process.env.SMTP_USER,
+            pass: process.env.SMTP_PASS
+        }
+    });
+    await transport.sendmMail(mail)
+    res.status(201).json({
+        error: false,
+        message: 'Mensaje Enviado'
+    });
+});
+
 module.exports = router;
